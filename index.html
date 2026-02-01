@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mitä tämä tarkoittaa minulle?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <h1>Mitä tämä tarkoittaa minulle?</h1>
+    <p class="subtitle">Pitkäjänteisen sijoittajan näkökulmasta</p>
+
+    <textarea id="inputText" placeholder="Liitä uutinen tai kirjoita aihe..."></textarea>
+
+    <div class="context">
+      <label><input type="checkbox" value="osakkeet" /> Osakkeet / rahastot</label>
+      <label><input type="checkbox" value="kryptot" /> Kryptot</label>
+      <label><input type="checkbox" value="suomi" /> Suomen talous</label>
+      <label><input type="checkbox" value="maailma" /> Maailmantalous</label>
+    </div>
+
+    <button id="analyzeBtn">Analysoi minulle</button>
+
+    <div id="result" class="hidden">
+
+      <div class="card highlight">
+        <strong>Merkittävyys: 2 / 5 – Heikko merkitys</strong>
+        <p>Ei vaadi välittömiä toimenpiteitä.</p>
+      </div>
+
+      <div class="card">
+        <h3>🔍 Mitä tapahtuu?</h3>
+        <p>Tähän tulee lyhyt selitys omin sanoin.</p>
+      </div>
+
+      <div class="card">
+        <h3>🎯 Vaikutus sijoittajalle</h3>
+        <p><strong>Osakkeet / rahastot:</strong> Neutraali</p>
+        <p><strong>Kryptot:</strong> Neutraali</p>
+      </div>
+
+      <div class="card">
+        <h3>⚠️ Riskit</h3>
+        <ul>
+          <li>Mahdollinen epävarmuus jatkossa</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>💡 Mahdollisuudet</h3>
+        <p>Ei merkittäviä tässä vaiheessa.</p>
+      </div>
+
+      <div class="card action">
+        👀 <strong>Seuraa tilannetta</strong>
+        <p>Yksittäinen muutos ei vielä muuta strategiaa.</p>
+      </div>
+
+      <button id="resetBtn" class="secondary">Uusi analyysi</button>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
